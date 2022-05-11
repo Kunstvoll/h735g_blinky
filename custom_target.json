@@ -1,0 +1,24 @@
+{
+    "DISCO_H735G": {
+        "inherits": [
+            "MCU_STM32H735xG"
+        ],
+        "macros_add": [
+            "HSE_VALUE=25000000"
+        ],
+        "overrides": {
+            "system_power_supply": "PWR_DIRECT_SMPS_SUPPLY",
+            "clock_source": "USE_PLL_HSE_XTAL|USE_PLL_HSI",
+            "default_toolchain": "IAR"
+            },
+        "detect_code": [
+            "0875"
+        ],
+        "device_name": "STM32H735IGTx",
+        "extra_labels_add": [
+            "STM32H735IGKx",
+            "STM32H735G-DK",
+            "STM32H735IGK",
+        ]
+    }
+}
