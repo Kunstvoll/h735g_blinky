@@ -12,16 +12,16 @@
 
 int main()
 {
-    DigitalOut led_1(LED1);
-    DigitalOut led_2(LED2);
+    DigitalOut led_1(LED1,1);
+    DigitalOut led_2(LED2,1);
 
-    DigitalOut led_3(LED3);
+    DigitalOut led_3(LED3,1);
 
 
     while (true) {
-        led_1=!led_1;
-        led_2=!led_2;
-        led_3=!led_3;
+        led_1.write(1);
+        led_2.write(1);
+        led_3.write(1);
         ThisThread::sleep_for(BLINKING_RATE);
     }
 }
